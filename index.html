@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding of Arif & Audina</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <p>We're Getting Married</p>
+                <h1>Arif & Audina</h1>
+            </div>
+    </div>
+    <div class="body-wrapper">
+        <div class="container">
+            <div class="contents-heading">
+                <h2> Save the Date</h2>
+            </div>
+            <div class="contents-date">
+                <p>
+                    <span>Tuesday,</span>
+                    <span>July</span>
+                    <span>19</span>
+                    <span>2022</span>
+                </p>
+            </div>
+            <div class="contents-date-time">
+                <div class="date1">
+                    <h5 id="days"></h5>
+                    <h5 id="hours"></h5>
+                </div>
+                <div class="date2">
+                    <h5 id="mins"></h5>
+                    <h5 id="secs"></h5>
+                </div>
+                <h2 id="end"></h2>
+            </div>
+            <div class="contents-bride-groom">
+                <h3>The Bride & Groom</h3>
+                <div class="bride">
+                    <img src="images/bride.png" alt="">
+                </div>
+                <div class="groom">
+                    <img src="images/groom.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-acara">
+        <div class="container">
+            <div class="detail-acara-judul">
+                <h2>Detail Acara</h2>
+            </div>
+            <div class="detail-acara-card">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/wedding.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h3>Akad Nikah</h3>
+                        <p>
+                            Masjid Falahul Faidzin 
+                        </p>
+                        <p>
+                            Puspanegara, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810
+                        </p>
+                    </div>
+                    <div class="card-text">
+                        <h3>Resepsi</h3>
+                        <p>
+                            Kediaman Mempelai Wanita
+                        </p>
+                        <p>
+                            Puspanegara, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="container">
+            <div class="gallery-judul">
+                <h2>Gallery</h2>
+            </div>
+        </div>
+    </div>
+    <div class="maps">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.0750221494011!2d106.87849994748836!3d-6.483628218247027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1b190d2ff97%3A0x3d342c1947bd483a!2sMasjid%20Falahul%20Faidzin!5e0!3m2!1sen!2sid!4v1653293770045!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2022 <span>ExAnimart</span></p>
+            </p>
+    </footer>
+
+    <!-- Script-->
+    <script>
+        var countDownDate = new Date("July 19, 2022 00:00:00").getTime();
+        var myfunc = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerHTML = days + "Hari "
+            document.getElementById("hours").innerHTML = hours + "Jam " 
+            document.getElementById("mins").innerHTML = minutes + "Menit " 
+            document.getElementById("secs").innerHTML = seconds + "Detik " 
+
+            if (timeleft < 0) {
+            clearInterval(myfunc);
+            document.getElementById("days").innerHTML = ""
+            document.getElementById("hours").innerHTML = "" 
+            document.getElementById("mins").innerHTML = ""
+            document.getElementById("secs").innerHTML = ""
+            document.getElementById("end").innerHTML = "TIME UP!!";
+    }
+        }, 1000);
+    </script>
+</body>
+</html>

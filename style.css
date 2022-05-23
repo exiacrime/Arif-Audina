@@ -1,0 +1,181 @@
+* {
+    box-sizing: 0;
+    margin : 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: darken;
+    width: 100%;
+}
+
+.header-wrapper p {
+    font-family: 'Almarai';
+    color: #fff;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 35px;
+}
+
+.header-wrapper h1 {
+    color: #fff;
+    font-family: 'Great Vibes';
+    font-size: 100px;
+    font-weight: lighter;
+}
+
+.body-wrapper {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.contents-heading h2 {
+    font-family: 'Great Vibes';
+    font-size: 50px;
+    font-weight: lighter;
+    color: #6c757d;
+    padding: 20px 0px 10px 0px;
+    align-items: center;
+
+}
+
+.contents-date p {
+    font-family: 'Alumni Sans';
+    font-size: 35px;
+    font-weight: 300;
+    color: #6c757d;
+    padding: 1rem 0rem;
+    align-items: center;
+    border-top: #6c757d solid 1px;
+    border-bottom: #6c757d solid 1px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.contents-date-time h5{
+    font-family: 'Alumni Sans';
+    font-size: 30px;
+    font-weight: lighter;
+    color: #6c757d;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.date1 {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.date2 {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contents-bride-groom {
+    margin-top: 100px;
+}
+
+.contents-bride-groom h3 {
+    font-family: 'Alumni Sans';
+    font-weight: lighter;
+    font-size: 35px;
+    color: #6c757d;
+}
+
+.detail-acara {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    background-image: url(img/bg3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    
+}  
+
+.detail-acara-card {
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1rem;
+    border: #fff solid 4px;
+}
+
+
+.detail-acara-judul h2 {
+    font-family: 'Great Vibes';
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    word-spacing: 2px;
+    padding-top: 5rem;
+}
+
+.card-text h3 {
+    margin-top:15px;
+    margin-bottom: 15px;
+    font-family: 'Great Vibes';
+    color: #fff;
+    font-size: 35px;
+    font-weight: lighter;
+    word-spacing: 2px;
+}
+
+.card-text p {
+    font-family: 'Alumni Sans';
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+.gallery {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.maps {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #6c757d solid 1px;
+}
+
